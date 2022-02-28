@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <section>
     <h1>Expense Tracker</h1>
     <h3 class="title">Your Balance</h3>
     <h2 class="title">$420.00</h2>
@@ -18,7 +18,7 @@
         </el-col>
       </el-row>
     </el-card>
-  </div>
+  </section>
 </template>
 
 <style scoped>

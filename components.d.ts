@@ -20,6 +20,7 @@ declare module 'vue' {
     History: typeof import('./src/components/History.vue')['default']
     Tracker: typeof import('./src/components/Tracker.vue')['default']
     TransactionCard: typeof import('./src/components/TransactionCard.vue')['default']
+    TransactionForm: typeof import('./src/components/TransactionForm.vue')['default']
     YourBalance: typeof import('./src/components/YourBalance.vue')['default']
   }
 }
