@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <header>
-    <h1>Hello world!</h1>
-  </header>
-
   <RouterView />
 </template>
 
 <style>
-@import '@/assets/base.css';
+@import "@/assets/base.css";
 
 #app {
   font-weight: normal;
