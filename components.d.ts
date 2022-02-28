@@ -4,17 +4,22 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AddTransaction: typeof import('./src/components/AddTransaction.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElContainer: typeof import('element-plus/es')['ElContainer']
     ElDivider: typeof import('element-plus/es')['ElDivider']
+    ElForm: typeof import('element-plus/es')['ElForm']
+    ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElInput: typeof import('element-plus/es')['ElInput']
     ElMain: typeof import('element-plus/es')['ElMain']
     ElRow: typeof import('element-plus/es')['ElRow']
     ElSpace: typeof import('element-plus/es')['ElSpace']
     History: typeof import('./src/components/History.vue')['default']
     Tracker: typeof import('./src/components/Tracker.vue')['default']
+    TransactionCard: typeof import('./src/components/TransactionCard.vue')['default']
     YourBalance: typeof import('./src/components/YourBalance.vue')['default']
   }
 }
