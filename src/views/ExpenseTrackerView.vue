@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
+import Tracker from '../components/Tracker.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Tracker />
   </main>
 </template>
