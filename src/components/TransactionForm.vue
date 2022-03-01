@@ -30,7 +30,7 @@ const submitDisabled = computed(
         <el-input v-model="form.amount"></el-input>
       </el-form-item>
       <el-form-item size="large">
-        <el-button type="primary" @click="onSubmit" :disabled="submitDisabled">Create</el-button>
+        <el-button type="primary" @click="onSubmit" :disabled="submitDisabled">Add</el-button>
       </el-form-item>
     </el-form>
   </section>
