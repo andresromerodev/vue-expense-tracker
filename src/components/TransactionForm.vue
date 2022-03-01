@@ -7,11 +7,11 @@ const initialState = { description: '', amount: 0 }
 
 const form = reactive({ ...initialState })
 
-const resetForm = () => Object.assign(form, initialState);
+const resetForm = () => Object.assign(form, initialState)
 
 const onSubmit = () => {
   emit('addTransaction', { ...form })
-  resetForm();
+  resetForm()
 }
 
 const submitDisabled = computed(

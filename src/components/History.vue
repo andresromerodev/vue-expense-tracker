@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TransactionCard from './TransactionCard.vue';
+import TransactionCard from './TransactionCard.vue'
 defineProps<{
   transactions?: any[]
 }>()

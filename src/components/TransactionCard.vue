@@ -6,7 +6,7 @@ const props = defineProps<{
   amount: number
 }>()
 
-const transactionClass = computed(() => props.amount >= 0 ? 'income' : 'expense');
+const transactionClass = computed(() => props.amount >= 0 ? 'income' : 'expense')
 
 </script>
 
