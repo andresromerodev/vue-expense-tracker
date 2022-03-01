@@ -4,6 +4,7 @@ import { reactive, ref } from 'vue'
 import YourBalance from "../components/YourBalance.vue"
 import History from "../components/History.vue"
 import TransactionForm from "../components/TransactionForm.vue"
+import Menu from "../components/Menu.vue"
 
 const balance = reactive({ income: 0, expense: 0 })
 const transactions = ref<any[]>([])
@@ -21,17 +22,18 @@ const addTransaction = (transaction: any) => {
 </script>
 
 <template>
-  <el-container>
-    <el-main>
-      <el-row>
-        <el-col>
-          <YourBalance class="section" :income="balance.income" :expense="balance.expense" />
-          <History class="section" :transactions="transactions" />
-          <TransactionForm class="section" @add-transaction="addTransaction" />
-        </el-col>
-      </el-row>
-    </el-main>
-  </el-container>
+  <el-header>
+    <Menu />
+  </el-header>
+  <el-main>
+    <el-row>
+      <el-col>
+        <YourBalance class="section" :income="balance.income" :expense="balance.expense" />
+        <History class="section" :transactions="transactions" />
+        <TransactionForm class="section" @add-transaction="addTransaction" />
+      </el-col>
+    </el-row>
+  </el-main>
 </template>
 
 <style scoped>

@@ -10,7 +10,6 @@ const totalBalance = computed(() => props.income - props.expense);
 
 <template>
   <section>
-    <h1 class="title">Expense Tracker</h1>
     <h3 class="title">Your Balance</h3>
     <h2 class="title">${{ totalBalance }}</h2>
     <el-card class="box-card">
