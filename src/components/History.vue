@@ -10,6 +10,7 @@ defineProps<{
     <h3>History</h3>
     <el-row :gutter="24">
       <el-col>
+        <el-empty v-if="!transactions?.length" description="History is empty"></el-empty>
         <TransactionCard
           v-for="transaction in transactions"
           :description="transaction.description"

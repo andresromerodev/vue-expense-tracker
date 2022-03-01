@@ -6,7 +6,7 @@ import History from "../components/History.vue"
 import TransactionForm from "../components/TransactionForm.vue"
 
 const balance = reactive({ income: 0, expense: 0 })
-const transactions = ref<any[]>([{ description: "Book", amount: 20 }])
+const transactions = ref<any[]>([])
 
 // TODO: Add typings to avoid casting to number
 const addTransaction = (transaction: any) => {
