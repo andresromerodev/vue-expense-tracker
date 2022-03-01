@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive, defineEmits } from 'vue'
+import { reactive, defineEmits, computed } from 'vue'
 
 const emit = defineEmits(['addTransaction'])
 
@@ -9,6 +9,10 @@ const form = reactive({
 })
 
 const onSubmit = () => emit('addTransaction', { ...form })
+
+const submitDisabled = computed(
+  () => !form.description || !form.amount || form.amount === 0
+)
 
 </script>
 
@@ -23,7 +27,7 @@ const onSubmit = () => emit('addTransaction', { ...form })
         <el-input v-model="form.amount"></el-input>
       </el-form-item>
       <el-form-item size="large">
-        <el-button type="primary" @click="onSubmit">Create</el-button>
+        <el-button type="primary" @click="onSubmit" :disabled="submitDisabled">Create</el-button>
       </el-form-item>
     </el-form>
   </section>

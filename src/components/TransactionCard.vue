@@ -1,12 +1,17 @@
 <script setup lang="ts">
-defineProps<{
-  description?: string
-  amount?: number
+import { computed } from 'vue';
+
+const props = defineProps<{
+  description: string
+  amount: number
 }>()
+
+const transactionClass = computed(() => props.amount >= 0 ? 'income' : 'expense');
+
 </script>
 
 <template>
-  <el-card shadow="always" class="income">
+  <el-card shadow="always" :class="transactionClass">
     <el-row>
       <div>{{ description }}</div>
       <div class="price-label">${{ amount }}</div>
