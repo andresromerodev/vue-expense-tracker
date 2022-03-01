@@ -3,17 +3,20 @@ import { reactive, defineEmits, computed } from 'vue'
 
 const emit = defineEmits(['addTransaction'])
 
-const form = reactive({
-  description: '',
-  amount: 0
-})
+const initialState = { description: '', amount: 0 }
 
-const onSubmit = () => emit('addTransaction', { ...form })
+const form = reactive({ ...initialState })
+
+const resetForm = () => Object.assign(form, initialState);
+
+const onSubmit = () => {
+  emit('addTransaction', { ...form })
+  resetForm();
+}
 
 const submitDisabled = computed(
   () => !form.description || !form.amount || form.amount === 0
 )
-
 </script>
 
 <template>
