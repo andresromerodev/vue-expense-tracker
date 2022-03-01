@@ -24,7 +24,7 @@ const addTransaction = (transaction: any) => {
   <el-container>
     <el-main>
       <el-row>
-        <el-col :span="10">
+        <el-col>
           <YourBalance class="section" :income="balance.income" :expense="balance.expense" />
           <History class="section" :transactions="transactions" />
           <TransactionForm class="section" @add-transaction="addTransaction" />
