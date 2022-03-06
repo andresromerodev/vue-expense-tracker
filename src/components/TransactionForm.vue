@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive, defineEmits, computed } from 'vue'
+import { reactive, computed } from 'vue'
 
 const emit = defineEmits(['addTransaction'])
 

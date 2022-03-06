@@ -15,8 +15,5 @@ const handleSelect = (key: string, keyPath: string[]) => console.log(key, keyPat
     <el-menu-item index="1">
       <router-link to="/" style="text-decoration: none;">Expense Tracker</router-link>
     </el-menu-item>
-    <el-menu-item index="2">
-      <router-link to="/calendar" style="text-decoration: none;">Calendar</router-link>
-    </el-menu-item>
   </el-menu>
 </template>

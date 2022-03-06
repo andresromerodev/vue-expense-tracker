@@ -28,6 +28,8 @@ declare module 'vue' {
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     History: typeof import('./src/components/History.vue')['default']
     Menu: typeof import('./src/components/Menu.vue')['default']
+    MenuBar: typeof import('./src/components/MenuBar.vue')['default']
+    Navbar: typeof import('./src/components/Navbar.vue')['default']
     Tracker: typeof import('./src/components/Tracker.vue')['default']
     TransactionCard: typeof import('./src/components/TransactionCard.vue')['default']
     TransactionForm: typeof import('./src/components/TransactionForm.vue')['default']
